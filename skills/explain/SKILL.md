@@ -1,10 +1,10 @@
 ---
 name: explain
-description: Explain code, a change, a system or an idea to the reader in ASD-STE100 Simplified Technical English at about 80% — short sentences, plain words, one idea per sentence, answer first, real examples, links to the code. Use on /explain, or when the user asks "explain", "what does X actually do", "how does X work", or says they don't get something.
-argument-hint: "<what to explain>"
+description: Explain code, a change, a system or an idea to the reader in the plugin's shared writing style — answer first, say why, real examples, links to the code. `/explain asd <topic>` uses ASD-STE100 Simplified Technical English at about 80% instead (short sentences, plain words, one idea per sentence). Use on /explain, or when the user asks "explain", "what does X actually do", "how does X work", or says they don't get something.
+argument-hint: "[asd] <what to explain>"
 ---
 
-# Explain (ASD-STE100 @ 80%)
+# Explain
 
 **Goal:** The reader understands the thing on the first read. Write for people who find long text hard (for example, readers with ADHD or dyslexia): the text must be easy to scan, easy to read, and short.
 
@@ -23,31 +23,9 @@ argument-hint: "<what to explain>"
 
 Leave a section out if it adds nothing. A small question gets a small answer.
 
-## ASD-STE100 rules (follow about 80%)
-The 20% is room for technical names (`TokenStream`, `MemoryIndex`), code terms, and the odd longer sentence when splitting it would make it harder to read.
-
-**Sentences**
-- Max **20 words** for steps and instructions. Max **25 words** for descriptions. Aim for 10–15.
-- **One idea per sentence.** One instruction per step.
-- **Active voice.** "The highlighter reads the text", not "the text is read by the highlighter".
-- **Simple tenses:** present, past, future. No "would have been", no "is being".
-- Max **6 sentences per paragraph.** Prefer lists and tables to paragraphs.
-
-**Words**
-- **Simple, common words.** Use "use" not "utilise", "start" not "initiate", "about" not "approximately", "show" not "demonstrate", "get" not "retrieve" (unless it's the method name).
-- **One word for one thing.** If you call it "the cache" once, don't call it "the store" later. Name things the same as the code does.
-- **Explain jargon in brackets the first time:** "stemming (cutting a word to its root: terminated → termin)". After that, just use the word.
-- **No -ing words as nouns** where a verb works: "when it highlights" not "during highlighting". Not strict.
-- **Avoid phrasal verbs and idioms:** "start" not "kick off", "check" not "look into".
-- **No vague words:** not "some", "various", "a lot of", "basically". Give the number, or name the things.
-- **Use "you" for the reader and "we" for the team's code.**
-
-**Layout (for ADHD and dyslexia)**
-- **Bold the key point** of each section. Only one bold phrase per paragraph.
-- Headings for anything longer than about 10 lines.
-- Short lines, white space between blocks. No walls of text.
-- Tables to compare things side by side.
-- Numbers as digits ("3 passes", not "three passes").
+## Style
+- **Default:** read `${CLAUDE_PLUGIN_ROOT}/knowledge/writing-style.md` (the plugin root is 2 folders above this skill's folder) and follow it.
+- **ASD mode:** if the request starts with `asd` (e.g. `/explain asd how the cache works`), also read `ASD-STE100.md` in this skill's folder and follow it. Drop the word `asd` from the topic.
 
 ## Code references
 - Label every file:line as `<repo>/<path>:<line>`. If the user has a rule for clickable code links (for example an `idea://open?file=…&line=…` link for IntelliJ), follow it.
@@ -55,7 +33,7 @@ The 20% is room for technical names (`TokenStream`, `MemoryIndex`), code terms, 
 
 ## Check before you send
 - Does the first sentence answer the question?
-- Is any sentence longer than 25 words? Split it.
+- In ASD mode: is any sentence longer than 25 words? Split it.
 - Is a word used for two things, or two words for one thing? Fix it.
 - Is every new term explained once?
 - Is every claim checked, or marked as not checked?

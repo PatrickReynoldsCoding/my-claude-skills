@@ -1,6 +1,6 @@
 {
   "name": "my-claude-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "General-purpose Claude Code skills (explain, code-review walkthroughs, code-flow diagrams, Excel tables) and a hook catalog",
   "author": {
     "name": "PatrickReynoldsCoding",
