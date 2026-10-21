@@ -16,6 +16,7 @@ A Claude Code plugin with general-purpose skills and a small hook catalog.
 | `explain` | Explain code or an idea in short, plain sentences (ASD-STE100 style), answer first. |
 | `review-annotate-code` | Temporarily annotate a branch's changes with numbered reading-order comments. Can move them to a GitHub PR as review comments. |
 | `review-code-change-flow-notes` | Write flow notes for a code change (old vs new code) so you can learn to read it, with a blank for your own summary of each flow. Set `FLOW_NOTES_ROOT` to choose where notes go. |
+| `review-code-diagram` | Draw a code flow as an Excalidraw sequence diagram where every box and arrow opens the exact line in IntelliJ. Ships a local server, a link opener app and a VS Code extension (macOS). |
 | `excel-table` | Build a styled `.xlsx` table (wrapped cells, fitted row heights, colour groups, legend). |
 
 ## Hooks (copy-paste, not auto-installed)
