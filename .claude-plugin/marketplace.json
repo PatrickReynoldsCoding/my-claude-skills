@@ -1,5 +1,5 @@
 {
-  "name": "patrick-claude",
+  "name": "my-claude-skills",
   "description": "Claude Code plugin marketplace with Patrick's general-purpose skills and hooks",
   "owner": {
     "name": "PatrickReynoldsCoding",
@@ -7,7 +7,7 @@
   },
   "plugins": [
     {
-      "name": "patrick-claude",
+      "name": "my-claude-skills",
       "source": "./",
       "description": "General-purpose Claude Code skills (explain, code-review walkthroughs, Excel tables) and a hook catalog"
     }
