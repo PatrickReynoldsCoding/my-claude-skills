@@ -1,11 +1,11 @@
 {
-  "name": "my-claude-skills",
-  "version": "0.3.0",
+  "name": "patrick-reynolds-skills",
+  "version": "0.4.0",
   "description": "General-purpose Claude Code skills (explain, code-review walkthroughs, code-flow diagrams, Excel tables) and a hook catalog",
   "author": {
     "name": "PatrickReynoldsCoding",
     "url": "https://github.com/PatrickReynoldsCoding"
   },
-  "homepage": "https://github.com/PatrickReynoldsCoding/my-claude-skills",
-  "repository": "https://github.com/PatrickReynoldsCoding/my-claude-skills"
+  "homepage": "https://github.com/PatrickReynoldsCoding/patrick-reynolds-skills",
+  "repository": "https://github.com/PatrickReynoldsCoding/patrick-reynolds-skills"
 }

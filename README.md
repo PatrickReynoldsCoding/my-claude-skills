@@ -1,12 +1,12 @@
-# my-claude-skills
+# patrick-reynolds-skills
 
 A Claude Code plugin with general-purpose skills and a small hook catalog.
 
 ## Install
 
 ```
-/plugin marketplace add PatrickReynoldsCoding/my-claude-skills
-/plugin install my-claude-skills@my-claude-skills
+/plugin marketplace add PatrickReynoldsCoding/patrick-reynolds-skills
+/plugin install patrick-reynolds-skills@patrick-reynolds-skills
 ```
 
 ## Skills
